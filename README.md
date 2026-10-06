@@ -5,7 +5,7 @@ I designed and iteratively refined a small family of ThinkScript studies that or
 The project grew from a simple chart-navigation need into a modular session-aware workflow with explicit rules for when levels form, when they become valid, how long they remain active, and what constitutes a qualifying sweep event.
 The system is intended as a decision-support and review tool, not as a standalone trading signal or a claim of predictive performance.
 Working System
- 
+ ![Session-Aware Liquidity Reference System](Screenshot%202026-10-06%20013515.png)
 Working-state chart view showing the session-aware liquidity workflow. Yellow lines mark prior-day high/low references, while cyan lines mark overnight high/low levels. The system keeps these session references structured and visible so sweep/reclaim events can be evaluated consistently.
 Modular Study Family
 The project is implemented as a coordinated group of ThinkScript studies rather than one monolithic indicator:
@@ -13,7 +13,7 @@ The project is implemented as a coordinated group of ThinkScript studies rather 
 - d_ICT_current_day_High_Low — current-session high/low tracking
 - d_ICT_overnight_liquidity_maps — completed overnight high/low references
 - d_ICT_Sweep_Detection_Label — configurable sweep/reclaim detection and status output
- 
+ ![Modular Session and Liquidity Study Stack](Screenshot%202026-10-06%20013323.png)
 Configuration view showing the coordinated study stack. Separate modules handle prior-day levels, current-session levels, completed overnight levels, and sweep/reclaim detection.
 Sweep Detection Logic
 The sweep detector can be configured to:
@@ -24,7 +24,7 @@ The sweep detector can be configured to:
 - limit accepted events per session
 - display persistent status information
 - show historical sweep markers
- 
+ ![Sweep Detection Configuration](Screenshot%202026-10-06%20013253.png)
 Configuration view of the sweep detector, including prior-day and overnight level selection, minimum pierce distance, optional close-back-through confirmation, session timing, one-signal controls, status labels, and historical sweep bubbles.
 Development and QA
 The strongest part of the project is the iterative QA/UAT process used to refine behavior.
